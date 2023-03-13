@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./sass/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald&family=Pacifico&family=Raleway:ital,wght@0,300;1,200&family=Roboto:ital,wght@1,300&family=Thasadith:ital@1&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@1,300&family=Oswald&family=Pacifico&family=Raleway:ital,wght@0,300;1,200&family=Roboto:ital,wght@1,300&family=Thasadith:ital@1&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+   <title>cart</title>
+   <script defer src="./scripts/main.js"></script>
+</head>
+<body>
+
+   <header class="container">
+      <div class="container__header">
+         <div class="container__header-logo">
+            <img class="container__header-logo-img" 
+               src="./img/icons8-модельное-платье-32.png" 
+               alt="#">
+            <h2 class="container__header-logo-womazing">
+               WOMAZING
+            </h2>
+         </div>
+
+         <nav id="active" class="container__header-title">
+            <ul class="container__header-link">
+               <li class="container__header-link-a">
+                  <a class="container__header-link-all" 
+                     href="./index.html">
+                     Главная
+                  </a>
+               </li>
+               <li class="container__header-link-a">
+                  <a class="container__header-link-all" 
+                     href="./shop.html">
+                     Магазин
+                  </a>
+               </li>
+               <li class="container__header-link-a">
+                  <a class="container__header-link-all" 
+                     href="./aboutbrand.html">
+                     О бренде
+                  </a>
+               </li>
+               <li class="container__header-link-a">
+                  <a class="container__header-link-all"
+                     href="./cantact.html">
+                     Контакты
+                  </a>
+               </li>
+            </ul>
+         </nav>
+         <div class="container__header-cart">
+            <a href="./cantact.html">
+               <img class="container__header-cart-icons1" 
+                  src="./img/icons8-телефон-50.png" 
+                  alt="#">
+            </a>      
+            <a href="./cantact.html" class="container__header-cart-tel">     
+               <span class="container__header-cart-span">
+                  +7 (495) 823-54-12
+               </span>
+            </a>
+            <a href="./cart.html">
+               <img class="container__header-cart-icons2" 
+                  src="./img/Vector.png" 
+                  alt="#">
+            </a>   
+         </div>
+      </div>
+   </header>
+
+
+   <div class="wrapper">
+      <div id="cart">
+         <div class="wocommerce-title__head">
+            <h2 class="wocommerce-title__head-label">
+               Корзина
+            </h2>
+            <div class="wocommerce-title__head-form">
+               <a class="wocommerce-title__head-all" href="./index.html">
+                  Главная
+               </a>
+               <p class="wocommerce-title__head-border">—</p>
+               <a class="wocommerce-title__head-all"  href="./cart.html">
+                  Корзина
+               </a>
+            </div>
+         </div>
+         <div class="cart">   
+            <div class="cart__head">
+               <p class="cart__head-1">Товар</p>
+               <p class="cart__head-2">Цена</p>
+               <p class="cart__head-3">Количество</p>
+               <p class="cart__head-4">Всего</p>
+            </div>
+            <div class="cart__head-ware">
+               <p class="cart__head-ware-x">X</p>
+               <img class="cart__head-ware-img" 
+                  src="./img/пальто.jpg" alt="#">
+               <p class="cart__head-ware-usa">Футболка USA</p>
+               <span class="cart__head-ware-1">$129</span>
+               <span class="cart__head-ware-2">1</span>
+               <span class="cart__head-ware-3">$129</span>
+            </div>
+            <div class="cart__head-log">
+               <input class="cart__head-log-input" 
+                  placeholder="Введите купон" type="text">
+               <button class="cart__head-log-button">Применить купон</button>
+               <button class="cart__head-log-button">Обновить корзину</button>
+            </div>
+            <div class="cart__head-result">
+               <span class="cart__head-result-p">Подытог:</span>
+               <span class="cart__head-result-span">$129</span>
+            </div>
+            <div class="cart__head-end">
+               <div class="cart__head-end-block">
+                  <span class="cart__head-end-overall">Итого:</span>
+                  <span class="cart__head-end-price">$129</span>
+               </div>
+               <button  class="cart__head-end-arrange" 
+                  onclick="myImg()">
+                  Оформить заказ
+               </button>
+            </div>
+         </div>
+      </div>
+
+
+      <div id="checkaunt" class="checkaunt-click">
+         <div id="form">
+            <div class="wocommerce-title__head">
+               <h2 class="wocommerce-title__head-label">
+                  Оформление заказа
+               </h2>
+               <div class="wocommerce-title__head-form">
+                  <a class="wocommerce-title__head-all"  href="./index.html">
+                     Главная
+                  </a>
+                  <p class="wocommerce-title__head-border">—</p>
+                  <a class="wocommerce-title__head-all"  href="./checkaut.html">
+                     Оформление заказа
+                  </a>
+               </div>
+            </div>
+            <div class="checkaunt">
+               <form class="checkaut__form" action="hendler.php">
+                  <h3 class="checkaut__form-h3">Данные покупателя</h3>
+                  <div class="checkaut__form-grup">
+                     <input class="checkaut__form-grup-input" 
+                     type="user" 
+                     required 
+                     placeholder="Имя">
+                  </div>
+                  <div class="checkaut__form-grup">
+                     <input class="checkaut__form-grup-input" 
+                     type="maile" 
+                     required 
+                     placeholder="E-mail">
+                  </div>
+                  <div class="checkaut__form-grup"> 
+                     <input class="checkaut__form-grup-input" 
+                     type="tel" 
+                     required 
+                     placeholder="Телефон">
+                  </div>
+                  <h3 class="checkaut__form-h3">Адрес получателя</h3>
+                  <div class="checkaut__form-grup">
+                     <input class="checkaut__form-grup-input" 
+                     type="user" 
+                     required 
+                     placeholder="Страна">
+                  </div>
+                  <div class="checkaut__form-grup">
+                     <input class="checkaut__form-grup-input" 
+                     type="user" 
+                     required 
+                     placeholder="Город">
+                  </div>
+                  <div class="checkaut__form-grup">
+                     <input class="checkaut__form-grup-input" 
+                     type="user" 
+                     required 
+                     placeholder="Улица">
+                  </div>
+                  <div class="checkaut__form-grup">
+                     <input class="checkaut__form-grup-input" 
+                     type="user" 
+                     required 
+                     placeholder="Дом">
+                  </div>
+                  <div class="checkaut__form-grup">
+                     <input class="checkaut__form-grup-input" 
+                     type="user" 
+                     required 
+                     placeholder="Квартира">
+                  </div>
+                  <h3 class="checkaut__form-h3">Комментарии</h3>
+                  <div class="checkaut__form-grup sms">
+                     <input class=" checkaut__form-grup-input" 
+                        type="user" required placeholder="Страна">
+                  </div>
+               </form>
+               <div class="checkaut__form-title">
+                  <h3 class="checkaut__form-h3">Ваш заказ</h3>
+                  <div class="checkaut__form-dell">
+                     <span class="checkaut__form-dell-ware">Товар</span>
+                     <span class="checkaut__form-dell-p">Всего</span>
+                  </div>
+                  <div class="checkaut__form-dell">
+                     <span class="checkaut__form-dell-shirt">Футболка USA</span>
+                     <span class="checkaut__form-dell-p">$129</span>
+                  </div>
+                  <div class="checkaut__form-dell">
+                     <span class="checkaut__form-dell-result">Подытог</span>
+                     <span class="checkaut__form-dell-p">$129</span>
+                  </div>
+                  <div class="checkaut__form-dell color">
+                     <span class="checkaut__form-dell-end">Итого</span>
+                     <span class="checkaut__form-dell-p">$129</span>
+                  </div>
+                  <div class="checkaut__form-pay">
+                     <h3 class="checkaut__form-h3">Способы оплаты</h3>
+                     <input class="checkaut__form-pay-cash" type="checkbox">
+                        Оплата наличными<br>
+                     <button type="button" class="checkaut__form-pay-button" onclick="myItem()">
+                        Разместить заказ
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+         <div id="success" class="checkaunt-click">
+            <div class="wocommerce-title__head">
+               <h2 class="wocommerce-title__head-label">
+                  Заказ получен
+               </h2>
+               <div class="wocommerce-title__head-form">
+                  <a class="wocommerce-title__head-all" href="./index.html">
+                     Главная
+                  </a>
+                  <p class="wocommerce-title__head-border">—</p>
+                  <a class="wocommerce-title__head-all" href="#" >
+                     Oформление заказа
+                  </a>
+                  <p class="wocommerce-title__head-border">—</p>
+                  <a class="wocommerce-title__head-all"  href="./success.html">
+                     Заказ получен
+                  </a>
+               </div>
+            </div>
+            <div class="success">
+               <div class="success__img">
+                  <img src="./img/icons8-галочка-48.png" alt="#">
+               </div>
+               <div class="success__text">
+                  <span class="success__text-live">
+                     Заказ успешно оформлен
+                  </span><br>
+                  <span class="success__text-p">
+                     Мы свяжемся с вами в ближайшее время!
+                  </span>
+               </div>
+               <button class="success__button" onclick="myClick()">
+                  Перейти на главную
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <footer class="footer">
+      <div class="footer__title">
+         <div class="footer__title-block">
+            <div class="footer__title-head">
+               <img class="footer__title-head-img" 
+                  src="./img/icons8-модельное-платье-32.png" 
+                  alt="#">
+               <h3 class="footer__title-head-h3">
+                  WOMAZING
+               </h3>
+            </div>
+            <div class="footer__title-text">
+               <span>© Все права защищены</span><br>
+               <span>Политика конфиденциальности</span><br>
+               <span>Публичная оферта</span><br>
+            </div>
+         </div>
+         <nav class="footer__title-block2">
+            <div id="active" class="footer__title-click">
+               <ul class="footer__title-click-ul">
+                  <li class="footer__title-click-li" >
+                     <a class="footer__title-click-shop" 
+                        href="./index.html">
+                        Главная
+                     </a>
+                  </li>
+                  <li class="footer__title-click-li">
+                     <a class="footer__title-click-shop" 
+                        href="./shop.html">
+                        Магазин
+                     </a>
+                  </li>
+                  <li class="footer__title-click-li">
+                     <a class="footer__title-click-shop" 
+                        href="./aboutbrand.html">
+                        О бренде
+                     </a>
+                  </li>
+                  <li class="footer__title-click-li">
+                     <a class="footer__title-click-shop" 
+                        href="./cantact.html">
+                        Контакты
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div  class="footer__title-block3">
+               <ul class="footer__title-sweet">
+                  <li class="footer__title-sweet-a">
+                     <a class="footer__title-sweet-all" 
+                        href="#">
+                        Пальто
+                     </a>
+                  </li>
+                  <li class="footer__title-sweet-a">
+                     <a class="footer__title-sweet-all" 
+                        href="#">
+                        Свитшоты
+                     </a>
+                  </li>
+                  <li class="footer__title-sweet-a">
+                     <a class="footer__title-sweet-all"
+                        href="#">
+                        Кардиганы
+                     </a>
+                  </li>
+                  <li class="footer__title-sweet-a">
+                     <a class="footer__title-sweet-all" 
+                        href="#">
+                        Толстовки
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+         <div class="footer__title-com">
+            <a href="./cantact.html"
+               class="footer__title-linck">
+               <p class="footer__title-tel">
+                  +7 (495) 823-54-12
+               </p>
+            </a>
+            <a href="./cantact.html"
+               class="footer__title-linck">
+               <p class="footer__title-gmile">
+                  hello@womazing.com
+               </p>
+            </a>
+            <div class="footer__title-block4">
+               <div class="footer__title-img1">
+                  <a href="instagram"
+                     class="footer__title-linck">
+                     <img class="footer__title-img1-a" 
+                        src="./img/icons8-instagram-100.png" 
+                        alt="#">
+                  </a>
+                  <a href="facebook"
+                     class="footer__title-linck">   
+                     <img class="footer__title-img1-a" 
+                        src="./img/icons8-значки-facebook-в-форме-круга-64.png"
+                        alt="#">
+                  </a>
+                  <a href="tvitter"
+                     class="footer__title-linck">      
+                     <img class="footer__title-img1-a"
+                        src="./img/icons8-твиттер-в-круге-64.png" 
+                        alt="#">
+                  </a>      
+               </div>
+               <div class="footer__title-img2">
+                  <a href="visa"
+                     class="footer__title-linck">
+                     <img class="footer__title-img1-b" 
+                        src="./img/icons8-виза-48.png" 
+                        alt="#">
+                  </a>
+                  <a href="mastercard"
+                  class="footer__title-linck">      
+                     <img class="footer__title-img1-b" 
+                        src="./img/icons8-логотип-mastercard-48.png" 
+                        alt="#">
+                  </a>      
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+</html>
