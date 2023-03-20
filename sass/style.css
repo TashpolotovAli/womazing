@@ -404,9 +404,11 @@ ul li a.active {
   font-family: Oswald;
   font-style: normal;
   font-size: 16px;
+  margin-bottom: 20px;
 }
 .command__block-head-text {
   font-family: Open Sans;
+  padding-bottom: 20px;
 }
 .command__block-click {
   text-decoration: none;
