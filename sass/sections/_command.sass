@@ -1,0 +1,122 @@
+.slider
+   margin: 0
+   padding: 0
+   height: 100vh
+   display: flex
+   align-items: center
+.radio-title
+   width: 700px
+   height: 500px
+   border-radius: 10px
+   overflow: hidden
+.radio-head
+   width: 500%
+   height: 500px
+   display: flex
+
+.radio-head input
+   display: none
+.slaide
+   width: 20%
+   transition: 2s
+.slaide img
+   width: 700px
+   height: 500px
+.navigation-manual
+   position: absolute
+   width: 800px
+   margin-top: -40px
+   display: flex
+   justify-content: center
+
+.manual-btn
+   border: 2px solid #40d3dc
+   padding: 5px
+   border-radius: 10px
+   cursor: pointer
+   transition: 1s
+
+.manual-btn:not(:last-child)
+   margin-right: 40px
+
+.manual-btn:hover
+   background: #40d3dc
+#radio1:checked ~ .first
+   margin-left: 0
+
+#radio2:checked ~ .first
+   margin-left: -20%
+
+#radio3:checked ~ .first
+   margin-left: -40%
+
+#radio4:checked ~ .first
+   margin-left: -60%
+
+.navigation-auto
+   position: absolute
+   display: flex
+   width: 800px
+   justify-content: center
+   margin-top: 460px
+.navigation-auto div
+   border: 2px solid #40d3dc
+   padding: 5px
+   border-radius: 10px
+   transition: 1s
+   display: flex
+.navigation-auto div:not(:last-child)
+   margin-right: 40px
+
+#radio1:checked ~ .navigation-auto .auto-btn1
+   background: #40d3dc
+
+#radio2:checked ~ .navigation-auto .auto-btn2
+   background: #40d3dc
+
+#radio3:checked ~ .navigation-auto .auto-btn3
+   background: #40d3dc
+
+#radio4:checked ~ .navigation-auto .auto-btn4
+   background: #40d3dc
+
+.command__block
+   &-text
+      font-family: Raleway
+      font-style: normal
+      font-size: 30px
+      margin: 100px 0 0 130px
+   &-title
+      display: flex
+      justify-content: space-evenly
+
+   &-head
+      width: 230px
+      height: 290px
+      position: relative
+      margin-top: 170px
+      &-p
+         font-family: Oswald
+         font-style: normal
+         font-size: 16px
+         margin-bottom: 20px
+      &-text
+         font-family: Open Sans
+   &-click
+      text-decoration: none
+      color: #000000
+      font-size: 17px
+      transition: 0.4s
+   &-click:hover
+      color: #1686cc
+   &-click::before
+      content: ''
+      bottom: 0
+      left: 0
+      position: absolute
+      width: 0%
+      height: 2px
+      background-color: #1686cc
+      transition: 0.5s
+   &-click:hover:before
+      width: 70%

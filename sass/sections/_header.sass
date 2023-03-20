@@ -1,0 +1,80 @@
+*
+   padding: 0
+   margin: 0
+body
+   padding: 0
+   margin: 0   
+.container
+   padding: 0
+   margin: 0
+   width: 100%
+   &__header
+      display: flex
+      justify-content: space-around
+      position: fixed
+      background-color: #fff 
+      width: 100%    
+      height: 50px
+      z-index: 2
+      top: 0
+      &-logo
+         display: flex
+         margin-right: 0
+         left: 0
+         right: 0
+         &-img
+            width: 30px
+            height: 30px
+            margin: 13px 0 0 50px
+         &-womazing
+            font-family: Raleway
+            font-size: 16px
+            font-style: normal
+            line-height: 19px
+            margin: 20px 0 0 0
+            color: #020202
+            cursor: default
+      &-title
+         position: relative 
+         justify-content: space-around       
+      &-title ul
+         list-style: none
+         margin: 0
+         padding: 0
+         display: flex
+         justify-content: center
+      &-title a
+         text-decoration: none
+         color: #000
+         display: block
+         padding: 20px 20px
+         font-size: 18px
+         transition: 0.3s
+      &-title a:hover
+         color: #1686cc
+      &-cart
+         display: flex
+         justify-content: space-between
+         margin: 15px 0 50px 0
+         &-icons1
+            width: 22px
+            height: 22px
+            transition: 0.3s
+            &:hover
+               background-color: #6E9C9F
+         &-span
+            color: #0a0707
+            margin-right: 50px
+            font-family: Raleway
+         &-tel 
+            text-decoration: none   
+         &-icons2
+            width: 25px
+            height: 25px
+            margin-right: 40px
+            cursor: pointer
+ul li a.active
+   color: #1686cc
+
+
+  
