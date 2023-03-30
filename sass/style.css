@@ -41,7 +41,6 @@ body {
   line-height: 19px;
   margin: 20px 0 0 0;
   color: #020202;
-  cursor: default;
 }
 .container__header-title {
   position: relative;
@@ -95,6 +94,11 @@ body {
 
 ul li a.active {
   color: #1686cc;
+}
+
+.woma {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .collection__title {
@@ -460,7 +464,6 @@ ul li a.active {
   line-height: 19px;
   margin: 35px 0 0 0;
   color: #020202;
-  cursor: default;
 }
 .footer__title-text {
   font-family: Open Sans;
@@ -649,6 +652,10 @@ ul li a.active {
 .child, .wocommerce-title__click:hover {
   background-color: #000;
   color: #fff;
+}
+
+.tab-content {
+  display: none;
 }
 
 .oneitem__head-type-title {
@@ -950,6 +957,7 @@ ul li a.active {
 }
 .cart__head-ware-x {
   padding: 50px 20px 0 0;
+  cursor: pointer;
 }
 .cart__head-ware-usa {
   padding: 50px 0 0 20px;
@@ -1027,7 +1035,7 @@ ul li a.active {
   color: #fff;
 }
 
-.checkaunt-click {
+.checkaunt__click {
   display: none;
 }
 
@@ -1169,4 +1177,50 @@ ul li a.active {
   .fon {
     padding: 0 0 0 200px;
   }
+}
+* {
+  padding: 0;
+  motion: 0;
+}
+* .poling {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+* .poling__block {
+  width: 480px;
+  height: 300px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  margin: -100px 0 0 -100px;
+  box-shadow: 3px 3px #e9e9e9, -1em 0 0.4em #a5a5a5;
+}
+* .poling__img {
+  width: 80px;
+  height: 80px;
+}
+* .poling__header {
+  padding-bottom: 20px;
+}
+* .poling__header-title {
+  padding-bottom: 10px;
+}
+* .poling__button {
+  width: 120px;
+  height: 37px;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #000;
+  background-color: #54abf1;
+  border: none;
+  transition: 0.5s;
+}
+* .poling__button:hover {
+  color: #fff;
+  background-color: #4e88b8;
 }/*# sourceMappingURL=style.css.map */

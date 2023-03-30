@@ -11,10 +11,6 @@ const menuLength = menuItem.length;
 
 
 
-
-
-
-
 function myFunction(){
    window,location.href="shop.html";
 };
@@ -27,7 +23,6 @@ function scrollTo(element) {
 };
 
 
-
 // активный button shop
 let buttons = document.querySelectorAll(".wocommerce-title__click");
    buttons.forEach(btn => {
@@ -38,6 +33,8 @@ let buttons = document.querySelectorAll(".wocommerce-title__click");
    });
 });
 
+
+
 let onItem = document.querySelectorAll('.oneitem__head-value-btn-button');
    onItem.forEach(btn =>{
       btn.addEventListener('click', function(){
@@ -46,12 +43,6 @@ let onItem = document.querySelectorAll('.oneitem__head-value-btn-button');
          this.classList.add('onitem');
       });
    });
-
-
-
-
-
-
 
 
 
@@ -68,6 +59,25 @@ function myItem(){
 function myClick(){
    window,location.href="index.html";
 };
+
+
+
+
+
+const tabsTitle = document.querySelectorAll('.wocommerce-title__click');
+const tabsContent = document.querySelectorAll('.tab-content');
+
+tabsTitle.forEach(item => item.addEventListener('click', event => {
+
+   const tabsTitleTarget = event.target.getAttribute('data-tab');
+
+ 
+   tabsContent.forEach(element => element.classList.add('tab-content'));
+
+   document.getElementById(tabsTitleTarget).classList.remove('tab-content');
+}));
+document.querySelector('#tab-1').classList.remove('tab-content');
+document.querySelector('[data-tab="tab-1"]').classList.add('child');
 
 
 
