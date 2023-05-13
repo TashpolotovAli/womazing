@@ -71,7 +71,6 @@ tabsTitle.forEach(item => item.addEventListener('click', event => {
 
    const tabsTitleTarget = event.target.getAttribute('data-tab');
 
- 
    tabsContent.forEach(element => element.classList.add('tab-content'));
 
    document.getElementById(tabsTitleTarget).classList.remove('tab-content');

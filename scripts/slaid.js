@@ -15,3 +15,4 @@ var footer = document.querySelector('#coll')
    button.addEventListener('click', () => {
       scrollTo(coll);
    });
+
